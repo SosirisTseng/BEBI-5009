@@ -50,8 +50,8 @@ PS. Another recommendation is to use [VS Code](https://code.visualstudio.com/) w
 
 # But I don't have a powerful computer
 
-Option 0: Use a remote (Unfortunately my remote server on TWCC was down so I cannot show you)
+Option 0: Use a remote. (Unfortunately, my remote server on TWCC was down so I cannot show you.)
 
-Option 1: Use [Google Colab](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb)
+Option 1: Use [Google Colab](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb).
 
-Option 2: Use [Nextjorunal](https://nextjournal.com/)
+Option 2: Use [Nextjorunal](https://nextjournal.com/). Template for [Julia 1.6 + Differential Eqautions](https://nextjournal.com/bebi5009/julia-template). 
