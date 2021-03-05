@@ -1,2 +1,2 @@
 - [🤹 **Julia**](/julia/)
-- [Hello](hello/)
+- [🕐 Basics](01-basics.md)

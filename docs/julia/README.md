@@ -6,15 +6,24 @@ https://github.com/NTUMitoLab/BEBI-5009
 1. [Think Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html)
 2. [From zero to Julia](https://techytok.com/from-zero-to-julia/)
 3. [Julia cheat sheet](https://juliadocs.github.io/Julia-Cheat-Sheet/) if you are familiar with Python and/or MATLAB.
-4. [Official Julia Docs](https://docs.julialang.org/) for dictionary look-up.
+4. [Official Julia Manual](https://docs.julialang.org/) for the API.
 5. [Julia for Pythonistas](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb)
+6. [Learn Julia](https://julialang.org/learning/) from the official website.
 
 # Why Julia?
 
-- Python-like syntax
-- C-like speed (after you run for the 1st time)
-- Flexibility across packages
-- Most importantly, comprehensive toolbox for this course
+[John F. Gibson's talk](https://github.com/johnfgibson/whyjulia/blob/master/1-whyjulia.ipynb)
+
+- Python/MATLAB-like syntax + natural math presentation
+- C-like speed (!) + built-in parallelism
+- Composable and extensible (e.g. DiffEq + ANN)
+- Right tool for this course to solve differential equations and stochastic simulations
+
+## Why not Julia?
+
+- Time to first plot (TTFF). Code needs to be compiled first so it feels less responsive than Python. [Somebody just gave up](https://www.zverovich.net/2016/05/13/giving-up-on-julia.html).
+- Less libraries in some domains. (e.g. metabolic networks)
+- [Arrays start at one](https://i.imgur.com/VRSkSGd.jpg)
 
 # Install and run Julia
 
@@ -37,8 +46,10 @@ IJulia.jupyterlab()  # Will open at ${HOME}, that is "C:\Users\yourname\" in Win
 
 PS. Another recommendation is [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
 
-# First steps
+# But I don't have a powerful computer
 
-## How to see the results
+Option 0: Use a remote (Unfortunately my remote server on TWCC was down so I cannot show you)
 
-`@show`,`println()`, `display()`, inline display for the last expression
+Option 1: Use [Google Colab](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb)
+
+Option 2: Use [Nextjorunal](https://nextjournal.com/)
