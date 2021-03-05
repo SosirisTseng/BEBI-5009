@@ -25,7 +25,7 @@ Chapter 1-4 describes mathematical modelling in molecular systems biology.
 - Model reductions.
 - Analyzing differential equation models: phase plane, stability, bifurcations, sensitivity analysis.
 
-Chapter 5 and beyond are applications in specific biological domain(s)
+Chapter 5 and beyond are applications in specific biological domain(s).
 
 - Stoichiometric modelling for large-scale metabolic networks. e.g. [CobraPy](https://opencobra.github.io/cobrapy/)
 - Signal transduction pathways.

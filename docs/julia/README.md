@@ -1,8 +1,5 @@
 # Julia tutorial
 
-https://github.com/NTUMitoLab/BEBI-5009
-
-**Reference**
 1. [Think Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html)
 2. [From zero to Julia](https://techytok.com/from-zero-to-julia/)
 3. [Julia cheat sheet](https://juliadocs.github.io/Julia-Cheat-Sheet/) if you are familiar with Python and/or MATLAB.
@@ -27,8 +24,17 @@ https://github.com/NTUMitoLab/BEBI-5009
 
 # Install and run Julia
 
-1. [Download Julia](https://julialang.org/downloads/). You could give version `1.6-rc1` a try because it loads much fater than previous versions.
-2. Open the Julia terminal and enter the following commands to install IJulia, the Julia kernel for Jupyter notebooks.
+[Download Julia](https://julialang.org/downloads/) and install. You could give version `1.6-rc1` a try because it loads much fater than previous versions.
+
+## REPL workflow
+
+Run the julia REPL (terminal) and start typing.
+
+## Jupyter workflow
+
+This workflow suits demonstration
+
+Open the Julia terminal and enter the following commands to install IJulia, the Julia kernel for Jupyter notebooks.
 
 ```julia
 using Pkg
@@ -36,22 +42,32 @@ using Pkg
 pkg"add IJulia"
 ```
 
-3. Run Jupyter Lab
+And then run Jupyter Lab either from the Julia terminal.
 
 ```julia
 using IJulia
 
 # It will prompt you to install jupyter lab, enter y to proceed
 # Will open at ${HOME}, thatby default it is "C:\Users\yourname\" in Windows systems.
-IJulia.jupyterlab()  
+IJulia.jupyterlab()
 ```
 
-PS. Another recommendation is to use [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
+Or from Anaconda's Jupyter lab interface if you have installed Anaconda.
 
-# But I don't have a powerful computer
+## VS Code workflow
 
-Option 0: Use a remote. (Unfortunately, my remote server on TWCC was down so I cannot show you.)
+[VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/) works better for structured code. See this [Youtube video](https://www.youtube.com/watch?v=IdhnP00Y1Ks).
 
-Option 1: Use [Google Colab](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb).
+!> Juno, the original IDE for Julia, is [in maintenance mode](https://www.youtube.com/watch?v=rQ7D1lXt3GM).
 
-Option 2: Use [Nextjorunal](https://nextjournal.com/). Template for [Julia 1.6 + Differential Eqautions](https://nextjournal.com/bebi5009/julia-template). 
+## My computer cannot run Julia
+
+### Google collab
+
+Open this [Julia for Pythonistas](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb) notebook, save a copy to your Google drive, and run it.
+
+### Nextjournal
+
+[Nextjournal](https://nextjournal.com/) provides a notebook-like UI for reproducible research.
+
+You could use [Tmy template for Julia 1.6 + Differential Equations](https://nextjournal.com/bebi5009/julia-template). 
