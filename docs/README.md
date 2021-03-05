@@ -1,46 +1,33 @@
-# BEBI-5009
+# Mathematical Modeling of Systems Biology
 
-# Julia tutorial
+!> This site is under construction and subject to frequent updates.
 
-https://github.com/NTUMitoLab/BEBI-5009
+## Course information
 
-**Reference**
-1. [Think Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html)
-2. [From zero to Julia](https://techytok.com/from-zero-to-julia/)
-3. [Julia cheat sheet](https://juliadocs.github.io/Julia-Cheat-Sheet/) if you are familiar with Python and/or MATLAB.
-4. [Official Julia Docs](https://docs.julialang.org/) for dictionary look-up.
-5. [Julia for Pythonistas](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb)
+👩‍🏫 Instructor: An-Chi Wei @ MD 521
 
-# Why Julia?
+🦜 Teaching assistant: Wen-Wei Tseng @ MD 705
 
-- Python-like syntax
-- C-like speed (after you run for the 1st time)
-- Flexibility across packages
-- Most importantly, comprehensive toolbox for this course
+📝 Announcements & homeworks: [NTU Cool](https://cool.ntu.edu.tw/)
 
-# Install and run Julia
+📗 Textbook: Mathematical Modeling in Systems Biology(2013), by Brian P. Ingalls ([pdf](https://www.math.uwaterloo.ca/~bingalls/MMSB/MMSB_w_solutions.pdf), [MATLAB code](https://www.math.uwaterloo.ca/~bingalls/MMSB/MMSB_code.xhtml))
 
-1. [Download Julia](https://julialang.org/downloads/). You could give version `1.6-rc1` a try because it loads much fater than previous versions.
-2. Open the Julia terminal and enter the following commands to install IJulia, the Julia kernel for Jupyter notebooks.
+📚 Additional materials
+- An Introduction to Stochastic Processes with Applications to Biology ([pdf](http://sistemas.fciencias.unam.mx/~silo/Cursos/coronavirus/Allen.pdf))
 
-```julia
-using Pkg
+## Course content
 
-pkg"add IJulia"
-```
+Chapter 1-4 describes mathematical modelling in molecular systems biology.
 
-3. Run Jupyter Lab
+- Basic notions of mathematical modelling.
+- Dynamic mathematical models of chemical reaction networks. (ODE models)
+- Biochemical kinetics of enzyme-catalysed reactions and cooperative binding. 
+- Model reductions.
+- Analyzing differential equation models: phase plane, stability, bifurcations, sensitivity analysis.
 
-```julia
-using IJulia
+Chapter 5 and beyond are applications in specific biological domain(s)
 
-IJulia.jupyterlab()  # Will open at ${HOME}, that is "C:\Users\yourname\" in Windows.
-```
-
-PS. Another recommendation is [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
-
-# First steps
-
-## How to see the results
-
-`@show`,`println()`, `display()`, inline display for the last expression
+- Stoichiometric modelling for large-scale metabolic networks. e.g. [CobraPy](https://opencobra.github.io/cobrapy/)
+- Signal transduction pathways.
+- Gene regulatory networks.
+- Electrophysiology and neuronal action potentials
