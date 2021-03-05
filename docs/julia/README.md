@@ -41,7 +41,9 @@ pkg"add IJulia"
 ```julia
 using IJulia
 
-IJulia.jupyterlab()  # Will open at ${HOME}, that is "C:\Users\yourname\" in Windows.
+# It will prompt you to install jupyter lab, enter y to proceed
+# Will open at ${HOME}, thatby default it is "C:\Users\yourname\" in Windows systems.
+IJulia.jupyterlab()  
 ```
 
 PS. Another recommendation is [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
