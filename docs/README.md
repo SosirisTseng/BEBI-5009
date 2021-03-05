@@ -1,6 +1,6 @@
 # Mathematical Modeling of Systems Biology
 
-!> This site is under construction and subject to frequent updates.
+!> 🏗️ This site is under construction and subject to frequent updates.
 
 ## Course information
 
