@@ -30,4 +30,4 @@ Chapter 5 and beyond are applications in specific biological domain(s)
 - Stoichiometric modelling for large-scale metabolic networks. e.g. [CobraPy](https://opencobra.github.io/cobrapy/)
 - Signal transduction pathways.
 - Gene regulatory networks.
-- Electrophysiology and neuronal action potentials
+- Electrophysiology and neuronal action potentials.
