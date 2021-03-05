@@ -46,7 +46,7 @@ using IJulia
 IJulia.jupyterlab()  
 ```
 
-PS. Another recommendation is [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
+PS. Another recommendation is to use [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/), more suitable for structured code.
 
 # But I don't have a powerful computer
 
