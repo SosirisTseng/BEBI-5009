@@ -28,11 +28,11 @@
 
 ## REPL workflow
 
-Run the julia REPL (terminal) and start typing.
+Run the julia REPL (terminal) and start typing. It is suitable for simple things like 1+1.
 
 ## Jupyter workflow
 
-This workflow suits demonstration
+This workflow is suitable for demonstrations and exploration.
 
 Open the Julia terminal and enter the following commands to install IJulia, the Julia kernel for Jupyter notebooks.
 
@@ -54,20 +54,32 @@ IJulia.jupyterlab()
 
 Or from Anaconda's Jupyter lab interface if you have installed Anaconda.
 
+## Pluto workflow
+
+[`Pluto.jl`](https://github.com/fonsp/Pluto.jl) is a reactive notebook environment that automatically updates all dependent values when a function or variable is changed.
+
+It is used in MIT'S course [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/).
+
+[Youtube video](https://youtu.be/C4QhZcX34mI) for using `Pluto.jl`.
+
 ## VS Code workflow
 
 [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/) works better for structured code. See this [Youtube video](https://www.youtube.com/watch?v=IdhnP00Y1Ks).
 
-!> Juno, the original IDE for Julia, is [in maintenance mode](https://www.youtube.com/watch?v=rQ7D1lXt3GM).
+!> Another IDE, [Juno](https://junolab.org), is [in maintenance mode](https://www.youtube.com/watch?v=rQ7D1lXt3GM).
 
-## My computer cannot run Julia
+## Cloud-based solutions
+
+If your computer is not powerful enough to run Julia.
 
 ### Google collab
 
 Open this [Julia for Pythonistas](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb) notebook, save a copy to your Google drive, and run it.
 
+You'll need to reload the browser window after the first cell is executed to load the Julia kernel. Also there is no syntax highlighting for Julia in that environment.
+
 ### Nextjournal
 
-[Nextjournal](https://nextjournal.com/) provides a notebook-like UI for reproducible research.
+[Nextjournal](https://nextjournal.com/) hosts playable notebooks for reproducible research.
 
-You could use [Tmy template for Julia 1.6 + Differential Equations](https://nextjournal.com/bebi5009/julia-template). 
+You could use [my template for Julia 1.6 + Differential Equations](https://nextjournal.com/bebi5009/julia-template).
