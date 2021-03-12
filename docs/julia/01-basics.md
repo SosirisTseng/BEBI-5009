@@ -13,9 +13,9 @@ multiple-line comment
 =#
 ```
 
-## How to see the output
+## See your results
 
-- `@show expression `shows both the expression and the result.
+- `@show expression` shows both the expression and the result.
 - `println(stuff)`for regular print and `@printf`for C-like formatted output.
 - The result of the last expression will be displayed inline and saved to `ans `variable in the Julia REPL
 - `display(stuff)` in Jupyter notebooks.
@@ -133,11 +133,6 @@ b = 3
 @show log10(10) # Common log
 @show exp(-5)
 @show exp(1e-10)-1, expm1(1e-10)
-
-# Random number generator
-@show uni01 = rand()     # Uniform distributed between 0 and 1 
-@show dics = rand(1:6)
-@show randomcharacter = rand("Hello")
 ```
 
 ## String manipulation

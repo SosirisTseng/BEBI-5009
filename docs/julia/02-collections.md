@@ -1,12 +1,16 @@
-# Collections
+# Collections and sequencies
 
-It is better to get organized When the amount of data gets large. Built-in collections provide the most basic way to tidy up a bunch of data. They are categorized by `mutability` and `accessing method` orthogonally.
+Built-in collections provide the most basic way to tidy up a bunch of data. They are categorized by `mutability` and `accessing method` orthogonally.
 
-The values of a `immutable` collection cannot be updated it's built, while a `mutable` collection allows user to edit after its creation. 
+The values of a `immutable` collection cannot be updated after its creation, while a `mutable` collection can. 
 
 The elements in `sequential` collections are accessed by *integer indices*, while those in `associative` collection are accessed by *keys*.
 
 !> In Julia, the index starts from **1**, as in R, MATLAB, and Fortran.
+
+## Ranges
+
+Ranges are cheap options for evenly-spaced number sequences.
 
 ## Tuples
 
