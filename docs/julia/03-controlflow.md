@@ -51,7 +51,7 @@ for (i, x) in enumerate(xs)
 end
 ```
 
-## Comprehensions
+## Collection + control flow = Comprehensions
 
 To construct a collection with for loop(s)
 
