@@ -38,6 +38,17 @@ t = (1, 2, 3)
 t = (4, 5, 6)
 ```
 
+Tuples are the easy way to swap variables
+
+```julia
+x = 6
+y = 9
+
+x, y = y, x
+
+@show (x, y)
+```
+
 ## Named Tuples
 
 Named tuples are `immutable` and `associative` collections.
