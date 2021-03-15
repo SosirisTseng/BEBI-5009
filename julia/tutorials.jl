@@ -220,9 +220,7 @@ u0 = 1.0
 sol = solve_euler(model, u0, tspan, p, dt=0.1)
 
 #### Installing packages ####
-
 using Pkg
-
 # Function form
 Pkg.add("Plots")
 
