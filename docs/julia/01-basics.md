@@ -152,7 +152,7 @@ A `string` is an array of characters.
 - `$` to insert a value into a string. However, `string(val1, val2)` is generally faster.
 
 ```julia
-@show 'a' == "a"
+'a' == "a" # false
 
 @info """ 
 Multiline
@@ -163,15 +163,14 @@ is here
 str1 = "BEBI"
 str2 = "5009"
 
-@show string("The class is ", str1, '-', str2)
-@show "The class is $str1-$str2"
+string("The class is ", str1, '-', str2) == "The class is $str1-$str2" # true
 
-# println() supports multiple arguments
+# println() also supports multiple arguments
 println("The class is ", str1, '-', st)
 
-@show str1[2]
-@show str1^3
-@show str1*str2 
+str1[2]   # E
+str1^3    # "BEBIBEBIBEBI"
+str1*str2 #  "BEBI5009"
 ```
 
 ## Compound expressions
@@ -185,7 +184,7 @@ z = begin
     z = x * y
 end
 
-@show (x, y, z)  # (1, 3, 3)
+(x, y, z)  # (1, 3, 3)
 ```
 
 A let block `let` ... `end` is similar to a begin block but variables decalred inside will not be available outside
@@ -198,5 +197,5 @@ z = let
 end
 
 # x and y is not available here
-@show z  # 3
+z  # 3
 ```
