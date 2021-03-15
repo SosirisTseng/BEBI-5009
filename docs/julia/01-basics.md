@@ -49,7 +49,7 @@ s = "Julia"
 const theUltimateAnswer = 42
 ```
 
-`typeof(val)` sees the data type.
+`typeof(val)` shows the data type.
 
 ```julia
 @show typeof(x)
@@ -58,10 +58,13 @@ const theUltimateAnswer = 42
 @show typeof(s)
 ```
 
-`convert(T , x`) converts `x` to type `T` if applicable.
+`convert(T , x)` converts `x` to type `T`.
 
 ```julia
 @show convert(Float64, 2)
+
+# Or
+@show Float64(2)
 ```
 
 ## Special characters
@@ -74,7 +77,7 @@ LaTeX-like `\something<TAB>`.
 β = 3.0 # \beta<TAB>
 ```
 
-Ask Julia if you do not know how to type it. (Only in interactive session like REPL or IJulia notebooks)
+Ask Julia if you do not know how to type it. (Only in interactive sessions like REPL or IJulia notebooks)
 
 ```julia
 ?π
@@ -137,17 +140,16 @@ b = 3
 
 ## String manipulation
 
-For more details, see [chapeter 8](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html#chap08) in Think Julia.
+See [chapeter 8](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html#chap08) in Think Julia in for details.
 
-A `string` is a sequence of characters.
+A `string` is an array of characters.
 
-- Single quotes for one character
 - `" ... "` for one line strings
 - `""" ....  """` for multiline strings
-- `str1*str2*...` or `string(str1, str2, ...)` to concatenate strings (the latter is more flexible and thus recommended)
-- `^` to repeat a string: `str^3`
+- `str1*str2*...` or `string(str1, str2, ...)` to concatenate strings.
+- `^` to repeat a string: `str^3` to repeat `str` three times.
 - `[idx]` to access an individual character.
-- `$` to insert a value into a string. But `string(val1, val2)` is faster and thus recommended.
+- `$` to insert a value into a string. However, `string(val1, val2)` is generally faster.
 
 ```julia
 @show 'a' == "a"
@@ -170,4 +172,31 @@ println("The class is ", str1, '-', st)
 @show str1[2]
 @show str1^3
 @show str1*str2 
+```
+
+## Compound expressions
+
+A begin block `begin` ... `end` squashes a multiline expressions into one.
+
+```julia
+z = begin
+    x = 1
+    y = x + 2
+    z = x * y
+end
+
+@show (x, y, z)  # (1, 3, 3)
+```
+
+A let block `let` ... `end` is similar to a begin block but variables decalred inside will not be available outside
+
+```julia
+z = let
+    x = 1
+    y = x + 2
+    z = x * y
+end
+
+# x and y is not available here
+@show z  # 3
 ```
