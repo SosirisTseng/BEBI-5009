@@ -16,15 +16,15 @@
 - Composable and extensible (e.g. DiffEq + ANN)
 - Right tool for this course to solve differential equations and stochastic simulations
 
-## Why not Julia?
+## Caveats about Julia?
 
-- Time to first plot (TTFF). Code needs to be compiled first so it feels less responsive than Python. [Somebody just gave up](https://www.zverovich.net/2016/05/13/giving-up-on-julia.html).
-- Less libraries in some domains. (e.g. metabolic networks)
-- [Arrays start at one](https://i.imgur.com/VRSkSGd.jpg)
+- Time to first plot (TTFF). Code needs to be compiled first so it is less responsive than Python. (but much faster afterwards)
+- Less libraries in some domains (e.g. metabolic networks) due to smaller ecosystems.
+- Arrays start at one.
 
 # Install and run Julia
 
-[Download Julia](https://julialang.org/downloads/) and install. You could give version `1.6-rc1` a try because it loads much fater than previous versions.
+[Download Julia](https://julialang.org/downloads/) and install. You could give version `1.6-rc2` a try because it loads much fater than previous versions.
 
 ## REPL workflow
 
@@ -32,7 +32,7 @@ Run the julia REPL (terminal) and start typing. It is suitable for simple things
 
 ## Jupyter workflow
 
-This workflow is suitable for demonstrations and exploration.
+This workflow is suitable for demonstrations, data explorations, and report submissions.
 
 Open the Julia terminal and enter the following commands to install IJulia, the Julia kernel for Jupyter notebooks.
 
@@ -52,21 +52,31 @@ using IJulia
 IJulia.jupyterlab()
 ```
 
-Or from Anaconda's Jupyter lab interface if you have installed Anaconda.
+Or from conda's Jupyter lab interface if you have installed conda.
 
 ## Pluto workflow
 
-[`Pluto.jl`](https://github.com/fonsp/Pluto.jl) is a reactive notebook environment that automatically updates all dependent values when a function or variable is changed.
+[`Pluto.jl`](https://github.com/fonsp/Pluto.jl) is a reactive notebook environment that automatically updates all dependent values when a function or variable is altered.
 
 It is used in MIT'S course [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/).
 
 [Youtube video](https://youtu.be/C4QhZcX34mI) for using `Pluto.jl`.
 
+```julia
+using Pkg
+
+pkg"add Pluto"
+
+using Pluto
+
+Pluto.run()
+```
+
 ## VS Code workflow
 
 [VS Code](https://code.visualstudio.com/) with [Julia extension](https://www.julia-vscode.org/) works better for structured code. See this [Youtube video](https://www.youtube.com/watch?v=IdhnP00Y1Ks).
 
-!> Another IDE, [Juno](https://junolab.org), is [in maintenance mode](https://www.youtube.com/watch?v=rQ7D1lXt3GM).
+!> Another IDE, [Juno](https://junolab.org), entered [in maintenance mode](https://www.youtube.com/watch?v=rQ7D1lXt3GM) in 2020. It is recommended to use VSCode now.
 
 ## Cloud-based solutions
 
