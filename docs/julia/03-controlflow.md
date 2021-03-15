@@ -39,11 +39,17 @@ end
 Number of loops determined by the container size.
 
 ```julia
+
+xs = 10:-1:1
+
 for x in xs
     println(x)
 end
-```
 
+for (i, x) in enumerate(xs)
+    println("xs[", i, "] = ", x)
+end
+```
 
 ## Comprehensions
 
